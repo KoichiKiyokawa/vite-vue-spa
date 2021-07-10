@@ -5,11 +5,16 @@ h1(class="") users index
 </template>
 
 <script setup lang="ts">
+import { useCurrentClientStore } from '~/stores/client'
+
 const users: { id: string; name: string }[] = [
   { id: '1', name: 'user1' },
   { id: '2', name: 'user2' },
   { id: '3', name: 'user3' },
 ]
+
+const currentUser = useCurrentClientStore()
+console.log(currentUser.id)
 </script>
 
 <style scoped lang="sass">
