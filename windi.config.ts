@@ -1,7 +1,5 @@
 import { defineConfig } from 'vite-plugin-windicss'
-// @ts-ignore
 import colors from 'windicss/colors'
-// @ts-ignore
 import typography from 'windicss/plugin/typography'
 
 export default defineConfig({
