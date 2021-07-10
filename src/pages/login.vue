@@ -12,7 +12,7 @@ form(@submit.prevent="submit" class="p-4 border rounded m-4 max-w-150")
 
 <script setup lang="ts">
 import { useLocalStorage } from '@vueuse/core'
-import { reactive } from 'vue-demi'
+import { reactive } from 'vue'
 import { useRouter } from 'vue-router'
 
 const router = useRouter()

@@ -121,4 +121,9 @@ export default defineConfig({
     include: ['vue', 'vue-router', '@vueuse/core'],
     exclude: ['vue-demi'],
   },
+  build: {
+    rollupOptions: {
+      // external: ['workbox-window', '@vue/composition-api'],
+    },
+  },
 })

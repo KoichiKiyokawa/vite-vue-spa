@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { RouterView } from 'vue-router'
 import { useHead } from '@vueuse/head'
 
 // https://github.com/vueuse/head
@@ -6,9 +7,7 @@ import { useHead } from '@vueuse/head'
 // they will be rendered correctly in the html results with vite-ssg
 useHead({
   title: 'Vitesse',
-  meta: [
-    { name: 'description', content: 'Opinionated Vite Starter Template' },
-  ],
+  meta: [{ name: 'description', content: 'Opinionated Vite Starter Template' }],
 })
 </script>
 
