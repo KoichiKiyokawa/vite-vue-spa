@@ -1,12 +1,12 @@
 import { defineConfig } from 'vite-plugin-windicss'
+// @ts-ignore
 import colors from 'windicss/colors'
+// @ts-ignore
 import typography from 'windicss/plugin/typography'
 
 export default defineConfig({
   darkMode: 'class',
-  plugins: [
-    typography(),
-  ],
+  plugins: [typography()],
   attributify: true,
   theme: {
     extend: {
@@ -16,10 +16,10 @@ export default defineConfig({
             maxWidth: '65ch',
             color: 'inherit',
             a: {
-              'color': 'inherit',
-              'opacity': 0.75,
-              'fontWeight': '500',
-              'textDecoration': 'underline',
+              color: 'inherit',
+              opacity: 0.75,
+              fontWeight: '500',
+              textDecoration: 'underline',
               '&:hover': {
                 opacity: 1,
                 color: colors.teal[600],

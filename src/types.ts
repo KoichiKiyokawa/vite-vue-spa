@@ -1,3 +1,4 @@
-import { ViteSSGContext } from 'vite-ssg'
+import { App } from 'vue'
+import { Router } from 'vue-router'
 
-export type UserModule = (ctx: ViteSSGContext) => void
+export type UserModule = (ctx: { app: App<Element>; router: Router }) => void

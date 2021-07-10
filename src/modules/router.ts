@@ -3,7 +3,7 @@ import { UserModule } from '~/types'
 
 const whiteList: string[] = ['/login']
 
-export const install: UserModule = ({ app, isClient, router }) => {
+export const install: UserModule = ({ app, router }) => {
   app.use(router)
 
   router.beforeEach(async (to, _from, next) => {
