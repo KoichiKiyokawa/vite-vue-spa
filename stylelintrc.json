@@ -1,0 +1,4 @@
+{"rules": {
+  "at-rule-no-unknown": [true,
+    {"ignoreAtRules": ["apply"]}]
+}}
